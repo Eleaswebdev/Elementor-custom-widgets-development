@@ -4,7 +4,7 @@
  * Description: Custom Elementor extension.
  * Plugin URI:  https://elementor.com/
  * Version:     1.0.0
- * Author:      Elementor
+ * Author:      Barry Eleas
  * Author URI:  https://elementor.com/
  * Text Domain: elementor-test-extension
  */
@@ -244,6 +244,7 @@ final class RRF_Commerce_Extension {
 		require_once( __DIR__ . '/widgets/products.php' );
 		require_once( __DIR__ . '/widgets/pricing-table.php' );
 		require_once( __DIR__ . '/widgets/custom-card.php' );
+		require_once( __DIR__ . '/widgets/card-carousel.php' );
 
 		// Register widget
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor_oEmbed_Widget() );
@@ -251,6 +252,7 @@ final class RRF_Commerce_Extension {
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \RRFCommerce_ContentBlock_Widget() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \RRFCommerce_Products_Widget() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \BECustom_Card_Widget() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \BECard_Carousel_Widget() );
 
 
 
@@ -260,6 +262,7 @@ final class RRF_Commerce_Extension {
 		wp_enqueue_style('rrfcommerce-slider', plugins_url('widgets/css/slider.css', __FILE__) );
 		wp_enqueue_style('content-box-css', plugins_url('widgets/css/content-box.css', __FILE__) );
 		wp_enqueue_style('pricing-table-css', plugins_url('widgets/css/pricing-table.css', __FILE__) );
+		wp_enqueue_style('card-carousel-css', plugins_url('widgets/css/card-carousel.css', __FILE__) );
 	} 
 
 	/**
