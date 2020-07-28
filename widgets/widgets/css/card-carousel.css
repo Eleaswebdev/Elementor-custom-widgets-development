@@ -1,0 +1,8 @@
+.card .card-body{
+	margin: 10px !important;
+}
+.card .card-body img{
+	height: 250px !important;
+	width: 100% !important;
+	
+}

@@ -1,0 +1,100 @@
+/* Slider CSS */
+
+
+.single-slide-item .row {
+    height: 700px;
+    text-align: center;
+}
+
+.single-slide-item:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background: #000;
+    opacity: .3;
+    z-index: -1;
+}
+
+.single-slide-item h2 {
+    font-size: 100px;
+    color: #fff;
+}
+
+.slide-info {
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    text-align: center;
+    color: #fff;
+}
+
+.single-slide-item {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-color: #ddd;
+    z-index: 2;
+}
+
+.slide-info h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+div.elementor-column-gap-default>.elementor-row>.elementor-column>.elementor-element-populated {
+    padding: 0;
+}
+
+.slides .slick-arrow {
+    position: absolute;
+    left: -5px;
+    top: 50%;
+    z-index: 3;
+    background: #000;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    color: #fff;
+    line-height: 55px;
+    font-size: 20px;
+    margin-top: -30px;
+    cursor: pointer;
+}
+
+.slides .slick-arrow.fa-angle-right {
+    left: auto;
+    right: -5px;
+}
+
+ul.slick-dots {
+    margin: 10px 0 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+ul.slick-dots li button {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background: #7a7a7a;
+    text-indent: -9999px;
+    border: none;
+    margin: 5px;
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+}
+
+ul.slick-dots li {
+    display: inline-block;
+}
+
+ul.slick-dots li.slick-active button {
+    background-color: #000;
+}
